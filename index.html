@@ -22,7 +22,7 @@
             <div class="todo">
                 <h2>To Do</h2>
 
-                <!-- Top 3 Goals -->
+                
                 <h3>Top 3 Goals</h3>
                 <div class="task">
                     <input type="text" placeholder="Goal 1" class="task-input">
@@ -37,7 +37,6 @@
                     <input type="checkbox" class="task-checkbox">
                 </div>
 
-                <!-- Everything Else with Add Task functionality -->
                 <h3>Everything Else</h3>
                 <div id="extra-tasks">
                     <div class="task">
@@ -47,7 +46,7 @@
                 </div>
                 <button id="add-task-btn">+</button>
 
-                <!-- Next Week -->
+              
                 <h3>Next Week</h3>
                 <div class="task">
                     <input type="text" placeholder="Next Week Task" class="task-input">
@@ -55,45 +54,50 @@
                 </div>
             </div>
 
-            <!-- Days of the week -->
-            <div class="day">
-                <h2>Monday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
+            <div class="grid-container">
+                <div class="day">
+                    <h2>Monday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                <div class="day">
+                    <h2>Tuesday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                
+                <div class="day">
+                    <h2>Wednesday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                <div class="day">
+                    <h2>Thursday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                <div class="day">
+                    <h2>Friday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                <div class="day">
+                    <h2>Saturday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
+                <div class="day">
+                    <h2>Sunday</h2>
+                    <textarea placeholder="Enter your plans"></textarea>
+                    <input type="checkbox" class="day-checkbox">
+                </div>
             </div>
-            <div class="day">
-                <h2>Tuesday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
-            </div>
-            <div class="day">
-                <h2>Wednesday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
-            </div>
-            <div class="day">
-                <h2>Thursday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
-            </div>
-            <div class="day">
-                <h2>Friday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
-            </div>
-            <div class="day">
-                <h2>Saturday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
-            </div>
-            <div class="day">
-                <h2>Sunday</h2>
-                <textarea placeholder="Enter your plans"></textarea>
-                <input type="checkbox" class="day-checkbox">
+
+               
             </div>
         </div>
     </div>
-
+
 <script>
         document.getElementById('add-task-btn').addEventListener('click', function() {
             var newTaskDiv = document.createElement('div');
