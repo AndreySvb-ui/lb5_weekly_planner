@@ -1,0 +1,153 @@
+body {
+    font-family: 'Snell Roundhand', 'Dancing Script', cursive;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.planner {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Snell Roundhand', 'Dancing Script', cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.week-input, .habit-input {
+    width: 30%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-group label {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+.todo {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo h2, .todo h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.task-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+#add-task-btn {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.day-checkbox {
+    width: 25px;
+    height: 25px;
+}
+
+/* Расположение дней недели */
+.day:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.day:nth-child(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.day:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.day:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.day:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+/* Воскресенье по центру внизу */
+.day:nth-child(7) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}

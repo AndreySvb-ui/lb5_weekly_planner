@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="planner">
+        <h1>Weekly Plan</h1>
+        <div class="top-section">
+            <input type="text" placeholder="Week of" class="week-input">
+            <input type="text" placeholder="Healthy Habit" class="habit-input">
+            <div class="checkbox-group">
+                <label>Rocked It<input type="checkbox"></label>
+                <label>Room for Improvement<input type="checkbox"></label>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="todo">
+                <h2>To Do</h2>
+
+                <!-- Top 3 Goals -->
+                <h3>Top 3 Goals</h3>
+                <div class="task">
+                    <input type="text" placeholder="Goal 1" class="task-input">
+                    <input type="checkbox" class="task-checkbox">
+                </div>
+                <div class="task">
+                    <input type="text" placeholder="Goal 2" class="task-input">
+                    <input type="checkbox" class="task-checkbox">
+                </div>
+                <div class="task">
+                    <input type="text" placeholder="Goal 3" class="task-input">
+                    <input type="checkbox" class="task-checkbox">
+                </div>
+
+                <!-- Everything Else with Add Task functionality -->
+                <h3>Everything Else</h3>
+                <div id="extra-tasks">
+                    <div class="task">
+                        <input type="text" placeholder="Task" class="task-input">
+                        <input type="checkbox" class="task-checkbox">
+                    </div>
+                </div>
+                <button id="add-task-btn">+</button>
+
+                <!-- Next Week -->
+                <h3>Next Week</h3>
+                <div class="task">
+                    <input type="text" placeholder="Next Week Task" class="task-input">
+                    <input type="checkbox" class="task-checkbox">
+                </div>
+            </div>
+
+            <!-- Days of the week -->
+            <div class="day">
+                <h2>Monday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Tuesday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Wednesday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Thursday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Friday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Saturday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+            <div class="day">
+                <h2>Sunday</h2>
+                <textarea placeholder="Enter your plans"></textarea>
+                <input type="checkbox" class="day-checkbox">
+            </div>
+        </div>
+    </div>
+
+<script>
+        document.getElementById('add-task-btn').addEventListener('click', function() {
+            var newTaskDiv = document.createElement('div');
+            newTaskDiv.classList.add('task');
+            var newTaskInput = document.createElement('input');
+            newTaskInput.type = 'text';
+            newTaskInput.placeholder = 'Task';
+            newTaskInput.classList.add('task-input');
+            var newTaskCheckbox = document.createElement('input');
+            newTaskCheckbox.type = 'checkbox';
+            newTaskCheckbox.classList.add('task-checkbox');
+            newTaskDiv.appendChild(newTaskInput);
+            newTaskDiv.appendChild(newTaskCheckbox);
+            document.getElementById('extra-tasks').appendChild(newTaskDiv);
+        });
+    </script>
+</body>
+</html>
